@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>图床上传配置</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="bulma.min.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">图床配置</h1>
+        <form id="uploaderForm">
+          <div class="field">
+            <label class="label" for="apiUrl">API URL:</label>
+            <div class="control">
+              <input class="input" type="text" id="apiUrl" name="apiUrl" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="postParam">POST 参数名:</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                id="postParam"
+                name="postParam"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="jsonPath">JSON 路径:</label>
+            <div class="control">
+              <input class="input" type="text" id="jsonPath" name="jsonPath" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="customRequestBody"
+              >自定义请求体:</label
+            >
+            <div class="control">
+              <textarea
+                class="textarea"
+                id="customRequestBody"
+                name="customRequestBody"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="customRequestHeaders"
+              >自定义请求头：</label
+            >
+            <div class="control">
+              <textarea
+                class="textarea"
+                id="customRequestHeaders"
+                name="customRequestHeaders"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link" id="saveBtn">保存</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
